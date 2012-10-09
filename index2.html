@@ -20,30 +20,34 @@
 		border-style: outset;
 		background: #DB9289;
 		text-align: center;
-		padding: 5pt;
-		background-size: 6pt;
+		padding: 5px;
 	}
 	h1{ text-align: center;
 		font-weight: bold;
+	}
+	tr{
+		background-color: #DDD; 
+		border-style: groove;
+		border-color: #000; 
+		width: 50px;
+		height: 30px; 
 	}
 	#time_table{ margin: 20px; font-size: 10pt;	}
 	#footer{ font-size: 70%;}
 	#content{ 
 		margin-left: 10%;
 	}
-	#table_day{ background-color: lightgray;border-style: outset; width: 100px;}
-	#table_class{ 
-		background-color: lightgray; 
-		border-style: outset; 
-		width: 50px;
-		height: 30px; }
-	#table_default{ background-color: gray;}
+	#table_day{ background-color: #DDD; border-style: outset; width: 100px;}
 	#toeic{ background-color: #B8A5F9; border-style: outset; border-color: #421FC1;}
 	#ob1{ background-color: #F49FF4; border-style: outset; border-color: #AB02C9;}
+	#ob2{ background-color: #F49FF4; border-style: outset; border-color: #AB02C9;}
 	#PL{background-color: #B6EF95; border-style: outset; border-color: #0EA80E;}
+	#PL1{background-color: #B6EF95; border-style: outset; border-color: #0EA80E;}
 	#chaple{ background-color: #EFE178; border-style: outset; border-color: #D6D605;}
-	#WebP{ background-color: #FF7B7B; border-style: outset; border-color: #AF0000;}
-	#ob2{ background-color: #98EDEB; border-style: outset; border-color: #029B8F;}
+	#WebP1{ background-color: #FF7B7B; border-style: outset; border-color: #AF0000;}
+	#WebP2{ background-color: #FF7B7B; border-style: outset; border-color: #AF0000;}
+	#WebP3{ background-color: #FF7B7B; border-style: outset; border-color: #AF0000;}
+	#hb2{ background-color: #98EDEB; border-style: outset; border-color: #029B8F;}
 	#Social{ background-color: #F4C498; border-style: outset; border-color: #A04E05;}
 	</style>
 </head>
@@ -55,24 +59,24 @@
 		</div>
 		<div id="navibar">
 			<table id="time_table">
-				<th>
+				<tr>
 					<td><a href="index1.html"><b>자기소개</b></a></td>
 					<td><a href="index2.html"><b>2-2학기</b></a></td>
 					<td><a href="index3.html"><b>설문조사</b></a></td>
-				</th>
+				</tr>
 			</table>
 		</div>	
 		<table border="1">
-		<tr>
-			<th id="table_default"></th>
-			<th id="table_day">월</th>
-			<th id="table_day">화</th>
-			<th id="table_day">수</th>
-			<th id="table_day">목</th>
-			<th id="table_day">금</th>
+		<tr id="table_day">
+			<th></th>
+			<th>월</th>
+			<th>화</th>
+			<th>수</th>
+			<th>목</th>
+			<th>금</th>
 		</tr>
 		<tr>
-			<th id="table_class">1교시</th>
+			<th>1교시</th>
 			<th></th>
 			<th></th>
 			<th></th>
@@ -80,26 +84,26 @@
 			<th id="toeic" rowspan="3">TOEIC<br/></th>
 		</tr>
 		<tr>
-			<th id="table_class">2교시</th>
+			<th>2교시</th>
 			<th></th>
 			<th id="ob1" rowspan="2">객체지향<br/>프로그래밍1</th>
 			<th></th>
-			<th id="ob1" rowspan="2">객체지향<br/>프로그래밍1</th>
+			<th id="ob2" rowspan="2">객체지향<br/>프로그래밍1</th>
 		</tr>
 		<tr>
-			<th id="table_class">3교시</th>
+			<th>3교시</th>
 			<th id="PL">프로그래밍<br/>언어</th>
-			<th id="PL" rowspan="2">프로그래밍<br/>언어</th>
+			<th id="PL1" rowspan="2">프로그래밍<br/>언어</th>
 		</tr>
 		<tr>
-			<th id="table_class">4교시</th>
+			<th>4교시</th>
 			<th></th>
 			<th></th>
 			<th id="chaple">채플</th>
 			<th></th>
 		</tr>
 		<tr>
-			<th id="table_class">5교시</th>
+			<th>5교시</th>
 			<th></th>
 			<th></th>
 			<th></th>
@@ -107,22 +111,22 @@
 			<th></th>
 		</tr>
 		<tr>
-			<th id="table_class">6교시</th>
-			<th id="WebP">웹프로그래밍</th>
-			<th id="ob2" rowspan="3">고급객체지향<br/>프로그래밍</th>
-			<th id="WebP">웹프로그래밍</th>
+			<th>6교시</th>
+			<th id="WebP1">웹프로그래밍</th>
+			<th id="hb2" rowspan="3">고급객체지향<br/>프로그래밍</th>
+			<th id="WebP2">웹프로그래밍</th>
 			<th></th>
-			<th id="WebP">웹프로그래밍<br/></th>
+			<th id="WebP3">웹프로그래밍<br/></th>
 		</tr>
 		<tr>
-			<th id="table_class">7교시</th>
+			<th>7교시</th>
 			<th id="Social" rowspan="2">현대사회와 <br/>기독교윤리</th>
 			<th></th>
 			<th></th>
 			<th></th>
 		</tr>
 		<tr>
-			<th id="table_class">8교시</th>
+			<th>8교시</th>
 			<th></th>
 			<th></th>
 			<th></th>
