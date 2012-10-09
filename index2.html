@@ -3,77 +3,136 @@
 <head>
 	<meta charset="utf-8">
 	<title>Index2</title>
+	<style type="text/css">
+	body{
+		background-color:#FCDBCD;
+		margin-left:20%;
+		margin-right:20%; 
+		border: 1px inset gray;
+		padding: 1px 1px 1px 1px;
+		float: center;
+		font-family:sans-serif;
+	}
+	table{
+		margin: 30px;
+	}
+	td{ 
+		border-style: outset;
+		background: #DB9289;
+		text-align: center;
+		padding: 5pt;
+		background-size: 6pt;
+	}
+	h1{ text-align: center;
+		font-weight: bold;
+	}
+	#time_table{ margin: 20px; font-size: 10pt;	}
+	#footer{ font-size: 70%;}
+	#content{ 
+		margin-left: 10%;
+	}
+	#table_day{ background-color: lightgray;border-style: outset; width: 100px;}
+	#table_class{ 
+		background-color: lightgray; 
+		border-style: outset; 
+		width: 50px;
+		height: 30px; }
+	#table_default{ background-color: gray;}
+	#toeic{ background-color: #B8A5F9; border-style: outset; border-color: #421FC1;}
+	#ob1{ background-color: #F49FF4; border-style: outset; border-color: #AB02C9;}
+	#PL{background-color: #B6EF95; border-style: outset; border-color: #0EA80E;}
+	#chaple{ background-color: #EFE178; border-style: outset; border-color: #D6D605;}
+	#WebP{ background-color: #FF7B7B; border-style: outset; border-color: #AF0000;}
+	#ob2{ background-color: #98EDEB; border-style: outset; border-color: #029B8F;}
+	#Social{ background-color: #F4C498; border-style: outset; border-color: #A04E05;}
+	</style>
 </head>
-<body style="background-color:#C3F4C3">
-	<h3>
-	<a href="index1.html"><b>Index1로 넘어가기</b></a>  || 
-	<a href="index3.html"><b>Index3로 넘어가기</b></a> </h3>
-	<h1 style="font-size:20pt">Index2      2-2학기 시간표</b></h1>
-	<table border="1" style="font-size:10pt">
+<body>
+<div id="wrap">
+	<div id="header">
+		<div id="header_title">
+			<h1><b>2-2학기 시간표</b></h1>
+		</div>
+		<div id="navibar">
+			<table id="time_table">
+				<th>
+					<td><a href="index1.html"><b>자기소개</b></a></td>
+					<td><a href="index2.html"><b>2-2학기</b></a></td>
+					<td><a href="index3.html"><b>설문조사</b></a></td>
+				</th>
+			</table>
+		</div>	
+		<table border="1">
 		<tr>
-			<th></th>
-			<th>월</th>
-			<th>화</th>
-			<th>수</th>
-			<th>목</th>
-			<th>금</th>
+			<th id="table_default"></th>
+			<th id="table_day">월</th>
+			<th id="table_day">화</th>
+			<th id="table_day">수</th>
+			<th id="table_day">목</th>
+			<th id="table_day">금</th>
 		</tr>
 		<tr>
-			<th>1교시</th>
+			<th id="table_class">1교시</th>
 			<th></th>
 			<th></th>
 			<th></th>
 			<th></th>
-			<th rowspan="3">TOEIC<br/></th>
+			<th id="toeic" rowspan="3">TOEIC<br/></th>
 		</tr>
 		<tr>
-			<th>2교시</th>
+			<th id="table_class">2교시</th>
 			<th></th>
-			<th rowspan="2">객체지향<br/>프로그래밍1</th>
+			<th id="ob1" rowspan="2">객체지향<br/>프로그래밍1</th>
 			<th></th>
-			<th rowspan="2">객체지향<br/>프로그래밍1</th>
+			<th id="ob1" rowspan="2">객체지향<br/>프로그래밍1</th>
 		</tr>
 		<tr>
-			<th>3교시</th>
-			<th>프로그래밍<br/>언어</th>
-			<th rowspan="2">프로그래밍<br/>언어</th>
+			<th id="table_class">3교시</th>
+			<th id="PL">프로그래밍<br/>언어</th>
+			<th id="PL" rowspan="2">프로그래밍<br/>언어</th>
 		</tr>
 		<tr>
-			<th>4교시</th>
+			<th id="table_class">4교시</th>
 			<th></th>
 			<th></th>
-			<th>채플</th>
-			<th></th>
-		</tr>
-		<tr>
-			<th>5교시</th>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th></th>
+			<th id="chaple">채플</th>
 			<th></th>
 		</tr>
 		<tr>
-			<th>6교시</th>
-			<th>웹프로그래밍</th>
-			<th rowspan="3">고급객체지향<br/>프로그래밍</th>
-			<th>웹프로그래밍</th>
+			<th id="table_class">5교시</th>
 			<th></th>
-			<th>웹프로그래밍<br/></th>
-		</tr>
-		<tr>
-			<th>7교시</th>
-			<th rowspan="2">현대사회와 <br/>기독교윤리</th>
+			<th></th>
 			<th></th>
 			<th></th>
 			<th></th>
 		</tr>
 		<tr>
-			<th>8교시</th>
+			<th id="table_class">6교시</th>
+			<th id="WebP">웹프로그래밍</th>
+			<th id="ob2" rowspan="3">고급객체지향<br/>프로그래밍</th>
+			<th id="WebP">웹프로그래밍</th>
+			<th></th>
+			<th id="WebP">웹프로그래밍<br/></th>
+		</tr>
+		<tr>
+			<th id="table_class">7교시</th>
+			<th id="Social" rowspan="2">현대사회와 <br/>기독교윤리</th>
 			<th></th>
 			<th></th>
 			<th></th>
 		</tr>
-	</table>
+		<tr>
+			<th id="table_class">8교시</th>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
+		</table>
+		<div id="footer">
+			<p> 사이트 소개 | 이용약관 | 개인정보취급방침 | 책임의 한계와 법적 
+			<p> copyright © 2012 GeoChang Inc. All rights reserved </p>
+		</div>
+	</div>
+</div>
 </body>
 </html>

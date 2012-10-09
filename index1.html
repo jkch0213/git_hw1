@@ -2,39 +2,92 @@
 <html lang="ko">
 <head>
 	<meta charset="utf-8">
-	<title>	Index1</title>
+	<title>	자기소개페이지</title>
+	<style type="text/css">
+	body{
+		background-color:#FCDBCD;
+		margin-left:20%;
+		margin-right:20%; 
+		border: 1px inset gray;
+		padding: 1px 1px 1px 1px;
+		float: center;
+		font-family:sans-serif;
+	}
+	table{
+		margin: 20px;
+	}
+	td{ 
+		border-style: outset;
+		background: #DB9289;
+		text-align: center;
+		padding: 5px;
+	}
+	ul{
+		list-style-type: none;
+		padding: 0px;
+		margin: 0px;
+	}
+	h1{ text-align: center;
+		font-weight: bold;
+	}
+	#footer{ font-size: 70%;}
+	#content{ 
+		margin-left: 10%;
+	}
+	#ol{ float:left; margin-right:1%}
+	</style>
+
 </head>
-<body style="background-color:#a0ffff" >
-	<h3>
-	<a href="index2.html"><b>Index2로 넘어가기</b></a>  || 
-	<a href="index3.html"><b>Index3로 넘어가기</b></a> </h3>
-	<h1 style="font-style:arial">Index1 자기소개</h1>
-	<img src = "images\전거창.jpg" alt="전거창.jpg">
-	<ol>
-		<li><b> 이름</b> : 전거창 </li>
-		<li><b> 출생</b> : 1991년 2월 13일 </li>
-		<li><b> 학력</b> 
-		<ul>
-			<li> 2005년 가원중학교 졸업 </li>
-			<li> 2009년 송파공업고등학교 졸업 </li>
-			<li> 2015년 명지대학교 졸업예정 </li>
-		</ul>
-		</li>
-		<li><b> 자격증 </b>
-		<ul>
-			<li> 전자계산기기능사(<a href="http://www.hrdkorea.or.kr" target="_blank"> 
-				한국산업인력공단</a>)</li>
-			<li> 운전면허자격증 1종(<a href="http://dl.koroad.or.kr/PAGE_license/view.jsp?code=101251" target="_blank"> 운전면허관리공단</a>)</li>
-			<li> 워드프로세서 2급(<a href="http://www.korcham.net/" target="_blank">대한상공회의소</a>) </li>
-			<li> 컴퓨터그래픽스운용기능사(<a href="http://www.q-net.or.kr/man001.do?gSite=Q" target="_blank">한국산업인력공단 </a>)</li>
-		</ul>
-		</li>
-		<li> <b>사이트</b>
-		<ul>
-			<li> <a href="http://www.cyworld.com/jkch0213" target="_blank"> Cyworld</a></li>
-			<li> <a href="http://www.facebook.com/#!/profile.php?id=100002621990257" target="_blank"> Facebook</a></li>
-		</ul>
-		</li>
-	</ol>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div id="header_title">
+			<h1>자기소개</h1>
+		</div>
+		<div id="navibar">
+			<table>
+				<th>
+					<td><a href="index1.html"><b>자기소개</b></a></td>
+					<td><a href="index2.html"><b>2-2학기</b></a></td>
+					<td><a href="index3.html"><b>설문조사</b></a></td>
+				</th>
+			</table>
+		</div>
+	</div>
+	<div id="content">
+		<img id="ol" src = "images\전거창.jpg" alt="전거창.jpg">
+		<ol id="ol">
+			<li><b> 이름</b> : 전거창 </li>
+			<li><b> 출생</b> : 1991년 2월 13일 </li>
+			<li><b> 학력</b> 
+			<ul>
+				<li> 2005년 가원중학교 졸업 </li>
+				<li> 2009년 송파공업고등학교 졸업 </li>
+				<li> 2015년 명지대학교 졸업예정 </li>
+			</ul>
+			</li>
+			<li><b> 자격증 </b>
+			<ul>
+				<li> 전자계산기기능사(<a href="http://www.hrdkorea.or.kr" target="_blank"> 
+					한국산업인력공단</a>)</li>
+				<li> 워드프로세서 2급(<a href="http://www.korcham.net/" target="_blank">대한상공회의소</a>) </li>
+				<li> 컴퓨터그래픽스운용기능사(<a href="http://www.q-net.or.kr/man001.do?gSite=Q" target="_blank">한국산업인력공단 </a>)</li>
+			</ul>
+			</li>
+			<li> <b>사이트</b>
+			<ul>
+				<li> <a href="http://www.cyworld.com/jkch0213" target="_blank"> 
+					Cyworld</a></li>
+				<li> <a href="http://www.facebook.com/#!/profile.php?id=100002621990257" target="_blank"> 
+					Facebook</a></li>
+			</ul>
+			</li>
+		</ol>
+	</div>
+	<div id="footer">
+		<p> 사이트 소개 | 이용약관 | 개인정보취급방침 | 책임의 한계와 법적 
+		<p> copyright © 2012 GeoChang Inc. All rights reserved </p>
+	</div>
+</div>
 </body>
 </html>

@@ -3,39 +3,85 @@
 <head>
 	<meta charset="utf-8">
 	<title>index3</title>
+	<style type="text/css">
+	body{
+		background-color:#FCDBCD;
+		margin-left:20%;
+		margin-right:20%; 
+		border: 1px inset gray;
+		padding: 1px 1px 1px 1px;
+		float: center;
+		font-family:sans-serif;
+	}
+	table{
+		margin: 20px;
+	}
+	td{ 
+		border-style: outset;
+		background: #DB9289;
+		text-align: center;
+		padding: 5px;
+	}
+	h1{ text-align: center;
+		font-weight: bold;
+	}
+	#footer{ font-size: 70%;}
+	#content{ 
+		margin-left: 10%;
+		font-weight: bold;
+	}
+	
+	</style>
 </head>
-<body style="background-color:#ffdddd">
-	<h3>
-	<a href="index1.html"><b>Index1로 넘어가기</b></a>  || 
-	<a href="index2.html"><b>Index2로 넘어가기</b></a> </h3>
-	<h1>Index3  설문조사</h1>
-	<br/>
-	<form method="post">
-		이름: <input type="text" name="name" size="7"/>
-		<br/>
-		성별: <input type="radio" name="sex" value="m"/>남 
-			  <input type="radio" name="sex" value="f"/>여
-		<br/>
-		취미: <input type="checkbox" name="hobby" value="exercise"/>운동
-			<input type="checkbox" name="hobby" value="sleep"/>잠자기
-			<input type="checkbox" name="hobby" value="Music"/>음악감상
-		<br>
-		이번학기 수강하는 과목: 
-			<select name="subject">
-				<option value="WebProgramming">웹프로그래밍</option>
-				<option value="Toeic">토익</option>
-				<option value="JavaProgramming">자바프로그래밍</option>
-				<option value="ProgrammingLanguage">프로그래밍언어</option>
-				<option value="객체지향프로그래밍1">객체지향프로그래밍1</option>
-				<option value="Math">선형대수학</option>
-			</select>
-		<br/>
-		자기소개:<br/>
-		<textarea cols="40" rows="7" name="introduce"></textarea>
-		<br/>
-		설문조사에 응해주셔서 감사합니다.
-		<input type="button" value="확인">
-		<br/>
-	</form>
+<body>
+<div id="wrap">
+	<div id="header">
+		<div id="header_title">
+			<h1><b>설문조사</b></h1>
+		</div>
+		<div id="navibar">
+			<table>
+				<th>
+					<td><a href="index1.html"><b>자기소개</b></a></td>
+					<td><a href="index2.html"><b>2-2학기</b></a></td>
+					<td><a href="index3.html"><b>설문조사</b></a></td>
+				</th>
+			</table>
+		</div>
+	</div>
+	<div id="content">		
+		<form method="post">
+			이름: <input type="text" name="name" size="7"/>
+			<br/>
+			성별: <input type="radio" name="sex" value="m"/>남 
+				  <input type="radio" name="sex" value="f"/>여
+			<br/>
+			취미: <input type="checkbox" name="hobby" value="exercise"/>운동
+				<input type="checkbox" name="hobby" value="sleep"/>잠자기
+				<input type="checkbox" name="hobby" value="Music"/>음악감상
+			<br>
+			이번학기 수강하는 과목: 
+				<select name="subject">
+					<option value="WebProgramming">웹프로그래밍</option>
+					<option value="Toeic">토익</option>
+					<option value="JavaProgramming">자바프로그래밍</option>
+					<option value="ProgrammingLanguage">프로그래밍언어</option>
+					<option value="객체지향프로그래밍1">객체지향프로그래밍1</option>
+					<option value="Math">선형대수학</option>
+				</select>
+			<br/>
+			자기소개:<br/>
+			<textarea cols="40" rows="7" name="introduce"></textarea>
+			<br/>
+			설문조사에 응해주셔서 감사합니다.
+			<input type="button" value="확인">
+			<br/>
+		</form>
+	</div>
+	<div id="footer">
+		<p> 사이트 소개 | 이용약관 | 개인정보취급방침 | 책임의 한계와 법적 
+		<p> copyright © 2012 GeoChang Inc. All rights reserved </p>
+	</div>
+</div>
 </body>
 </html>
