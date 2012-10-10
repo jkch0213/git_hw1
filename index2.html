@@ -14,7 +14,8 @@
 		font-family:sans-serif;
 	}
 	table{
-		margin: 30px;
+		margin: 10px;
+
 	}
 	td{ 
 		border-style: outset;
@@ -32,23 +33,17 @@
 		width: 50px;
 		height: 30px; 
 	}
-	#time_table{ margin: 20px; font-size: 10pt;	}
+	#navibar div.linker{ margin: 50px; font-size: 10pt;	}
 	#footer{ font-size: 70%;}
-	#content{ 
-		margin-left: 10%;
-	}
-	#table_day{ background-color: #DDD; border-style: outset; width: 100px;}
-	#toeic{ background-color: #B8A5F9; border-style: outset; border-color: #421FC1;}
-	#ob1{ background-color: #F49FF4; border-style: outset; border-color: #AB02C9;}
-	#ob2{ background-color: #F49FF4; border-style: outset; border-color: #AB02C9;}
-	#PL{background-color: #B6EF95; border-style: outset; border-color: #0EA80E;}
-	#PL1{background-color: #B6EF95; border-style: outset; border-color: #0EA80E;}
-	#chaple{ background-color: #EFE178; border-style: outset; border-color: #D6D605;}
-	#WebP1{ background-color: #FF7B7B; border-style: outset; border-color: #AF0000;}
-	#WebP2{ background-color: #FF7B7B; border-style: outset; border-color: #AF0000;}
-	#WebP3{ background-color: #FF7B7B; border-style: outset; border-color: #AF0000;}
-	#hb2{ background-color: #98EDEB; border-style: outset; border-color: #029B8F;}
-	#Social{ background-color: #F4C498; border-style: outset; border-color: #A04E05;}
+	#content{ margin-left: 10%;}
+	#content div.table_day{ background-color: #DDD; border-style: outset; width: 100px;}
+	#content div.toeic{ background-color: #B8A5F9; border-style: outset; border-color: #421FC1;}
+	#content div.ob{ background-color: #F49FF4; border-style: outset; border-color: #AB02C9;}
+	#content div.PL{background-color: #B6EF95; border-style: outset; border-color: #0EA80E;}
+	#content div.chaple{ background-color: #EFE178; border-style: outset; border-color: #D6D605;}
+	#content div.WebP1{ background-color: #FF7B7B; border-style: outset; border-color: #AF0000;}
+	#content div.hb1{ background-color: #98EDEB; border-style: outset; border-color: #029B8F;}
+	#content div.Social{ background-color: #F4C498; border-style: outset; border-color: #A04E05;}
 	</style>
 </head>
 <body>
@@ -58,80 +53,82 @@
 			<h1><b>2-2학기 시간표</b></h1>
 		</div>
 		<div id="navibar">
-			<table id="time_table">
+			<table id="linker">
 				<tr>
 					<td><a href="index1.html"><b>자기소개</b></a></td>
 					<td><a href="index2.html"><b>2-2학기</b></a></td>
 					<td><a href="index3.html"><b>설문조사</b></a></td>
 				</tr>
 			</table>
-		</div>	
-		<table border="1">
-		<tr id="table_day">
-			<th></th>
-			<th>월</th>
-			<th>화</th>
-			<th>수</th>
-			<th>목</th>
-			<th>금</th>
-		</tr>
-		<tr>
-			<th>1교시</th>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th id="toeic" rowspan="3">TOEIC<br/></th>
-		</tr>
-		<tr>
-			<th>2교시</th>
-			<th></th>
-			<th id="ob1" rowspan="2">객체지향<br/>프로그래밍1</th>
-			<th></th>
-			<th id="ob2" rowspan="2">객체지향<br/>프로그래밍1</th>
-		</tr>
-		<tr>
-			<th>3교시</th>
-			<th id="PL">프로그래밍<br/>언어</th>
-			<th id="PL1" rowspan="2">프로그래밍<br/>언어</th>
-		</tr>
-		<tr>
-			<th>4교시</th>
-			<th></th>
-			<th></th>
-			<th id="chaple">채플</th>
-			<th></th>
-		</tr>
-		<tr>
-			<th>5교시</th>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th></th>
-		</tr>
-		<tr>
-			<th>6교시</th>
-			<th id="WebP1">웹프로그래밍</th>
-			<th id="hb2" rowspan="3">고급객체지향<br/>프로그래밍</th>
-			<th id="WebP2">웹프로그래밍</th>
-			<th></th>
-			<th id="WebP3">웹프로그래밍<br/></th>
-		</tr>
-		<tr>
-			<th>7교시</th>
-			<th id="Social" rowspan="2">현대사회와 <br/>기독교윤리</th>
-			<th></th>
-			<th></th>
-			<th></th>
-		</tr>
-		<tr>
-			<th>8교시</th>
-			<th></th>
-			<th></th>
-			<th></th>
-		</tr>
-		</table>
+		</div>
+		<div id="content">
+			<table border="1">
+				<tr>
+					<th></th>
+					<th class="table_day">월</th>
+					<th class="table_day">화</th>
+					<th class="table_day">수</th>
+					<th class="table_day">목</th>
+					<th class="table_day">금</th>
+				</tr>
+				<tr>
+					<th>1교시</th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th class="toeic" rowspan="3">TOEIC<br/></th>
+				</tr>
+				<tr>
+					<th>2교시</th>
+					<th></th>
+					<th class="ob" rowspan="2">객체지향<br/>프로그래밍1</th>
+					<th></th>
+					<th class="ob" rowspan="2">객체지향<br/>프로그래밍1</th>
+				</tr>
+				<tr>
+					<th>3교시</th>
+					<th class="PL">프로그래밍<br/>언어</th>
+					<th class="PL" rowspan="2">프로그래밍<br/>언어</th>
+				</tr>
+				<tr>
+					<th>4교시</th>
+					<th></th>
+					<th></th>
+					<th class="chaple">채플</th>
+					<th></th>
+				</tr>
+				<tr>
+					<th>5교시</th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<th>6교시</th>
+					<th class="WebP1">웹프로그래밍</th>
+					<th class="hb1" rowspan="3">고급객체지향<br/>프로그래밍</th>
+					<th class="WebP1">웹프로그래밍</th>
+					<th></th>
+					<th class="WebP1">웹프로그래밍<br/></th>
+				</tr>
+				<tr>
+					<th>7교시</th>
+					<th class="Social" rowspan="2">현대사회와 <br/>기독교윤리</th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<th>8교시</th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+			</table>
+		</div>
 		<div id="footer">
 			<p> 사이트 소개 | 이용약관 | 개인정보취급방침 | 책임의 한계와 법적 
 			<p> copyright © 2012 GeoChang Inc. All rights reserved </p>
