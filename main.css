@@ -1,0 +1,75 @@
+<style type="text/css">
+
+html{background:#FCDBCD;}
+body{background:#ccc; float:center;}
+td, h1{text-align: center; font-style: bold;}
+
+#wrap{
+	width: 960px;
+	margin:0 auto;
+	background:#FCDBCD; 
+	font-family:sans-serif;
+	border-style: solid;
+	border-width: 1px;
+}
+
+#header_title{ 
+	font-size: 18pt;
+	font-family: Tahoma;
+}
+#navibar table{
+	margin-left: 35%; 
+	margin-right: 35%;
+}
+#navibar table tr td{
+	border-width: 3px;
+	border-color: #FFBBBB;
+	border-style: outset;
+	width:100px;
+	height:30px;
+	background-color: #FFABBD;
+}
+#navibar a.link{text-decoration: none; color:black;}
+#navibar a.hover, a.active{background-color: pink;}
+
+#content{
+	margin-right: 18%;
+	margin-left:18%;
+	margin-bottom: 3%;
+	margin-top: 3%;
+	font-weight: bold;
+}
+#content img{ float:left;}
+#content ol{ margin-left: 27%;}
+
+#content table tr{
+	font: #000; 
+	width: 100px;
+	height: 35px;
+}
+#content table tr td{ 
+	font-size:9pt;
+	border-width: 3px;
+	border-color: #AAA;
+	padding: 5px;
+	background-color: #eee; 
+	border-style: outset;
+	width: 50px;
+}
+
+#content .table_day{border-style: outset; width: 100px;}
+#content .toeic{ background-color: #B8A5F9; border-style: outset; border-color: #421FC1;}
+#content .ob{ background-color: #F49FF4; border-style: outset; border-color: #AB02C9;}
+#content .PL{ background-color: #B6EF95; border-style: outset; border-color: #0EA80E;}
+#content .chaple{ background-color: #EFE178; border-style: outset; border-color: #D6D605;}
+#content .WebP1{ background-color: #FF7B7B; border-style: outset; border-color: #AF0000;}
+#content .hb1{ background-color: #98EDEB; border-style: outset; border-color: #029B8F;}
+#content .Social{ background-color: #F4C498; border-style: outset; border-color: #A04E05;}
+
+#footer{
+	margin: 20px;
+	font-size: 70%;
+}
+
+</style>
+
