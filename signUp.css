@@ -4,10 +4,31 @@ html{background:#FCDBCD; width:250px; height:200px;}
 body{background:#ccc; float:center;}
 td, h1{ font-style: bold;}
 
+#login table{
+	margin-right: 35%;
+	margin-left: 35%;
+	margin-top: %;
+
+
+	font-size:9pt;
+	border-width: 3px;
+	border-color: #AAA;
+	padding: 5px;
+	background-color: #eee; 
+	border-style: inset;
+}
+#login table .align{ text-align: center;}
+
+#content table{ 
+	margin-right: 30%;
+	margin-left: 30%;
+	margin-top: 20%;
+}
+
 #content table tr{
 	font: #000; 
 }
-#content table tr td{ 
+#content table{
 	font-size:9pt;
 	border-width: 3px;
 	border-color: #AAA;
