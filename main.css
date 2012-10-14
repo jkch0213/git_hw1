@@ -49,6 +49,17 @@ td, h1{text-align: center; font-style: bold;}
 #content img{ float:left;}
 #content ol{ margin-left: 27%;}
 
+#content2{
+	margin-right: 18%;
+	margin-left:18%;
+	margin-bottom: 3%;
+	margin-top: 3%;
+	font-weight: bold;
+}
+#content2 img{ float:left;}
+#content2 ol{ margin-left: 27%;}
+
+
 #content table tr{
 	font: #000; 
 	width: 100px;
