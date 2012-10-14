@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>회원가입</title>
+	<link href="signUp.css" rel="stylesheet" type="text/css"> 
+</head>
+<body>
+<div id= "content">
+	<table >
+		<tr>
+			<td>아이디</td>
+			<td><input type="text" name="text_id" size="10"/>
+				<input type="button" value="중복조회"/>
+			</td>
+		</tr>
+		<tr>
+			<td>비밀번호</td>
+			<td><input type="text" size="10" name="password">
+				확인
+				<input type="text" size="10" name="password2">
+			</td>
+		</tr>
+		<tr>
+			<td>이름</td>
+			<td><input type="text" name="user_name" size="10"/></td>
+		</tr>
+		<tr>
+			<td>이메일</td>
+			<td><input type="text" name="user_name" size="10"/></td>
+		</tr>
+		<tr>
+			<td>성별</td>
+			<td><input type="radio" name="sex"/>남
+				<input type="radio" name="sex"/>여</td>
+		</tr>
+		<tr>
+			<td>지역</td>
+			<td><select name="region">
+				<option value="Austria">오스트리아 </option>
+				<option value="America">미국 </option>
+				<option value="China">중국 </option>
+				<option value="Korea">한국 </option>
+				<option value="Japan">일본 </option>
+				<option value="India">인도 </option>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="checkbox">개인정보 수집에 동의합니다.
+				<input type="button" name="check_PriInfor" value="개인정보 조항확인">
+			</td>
+		</tr>
+	</table>
+	<input type="button" value="회원가입" name="sign_up">
+</body>
+</html>
+

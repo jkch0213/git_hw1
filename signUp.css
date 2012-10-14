@@ -1,0 +1,18 @@
+<style type="text/css">
+
+html{background:#FCDBCD; width:250px; height:200px;}
+body{background:#ccc; float:center;}
+td, h1{ font-style: bold;}
+
+#content table tr{
+	font: #000; 
+}
+#content table tr td{ 
+	font-size:9pt;
+	border-width: 3px;
+	border-color: #AAA;
+	padding: 5px;
+	background-color: #eee; 
+	border-style: inset;
+}
+</style>
